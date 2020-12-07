@@ -74,6 +74,12 @@ a:hover {
     *zoom: 1;
 }
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+}
+
 .col-lg-12 {
     overflow: hidden;
 }
@@ -710,11 +716,10 @@ a:hover {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-.single-switch::before {
+.single-switch {
     padding: 0;
     margin: 0.7em;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
 }
 
 .single-switch::after {
@@ -731,7 +736,6 @@ a:hover {
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(45deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    transition: all 0.3s ease 0s;
 }
 
 .single-switch:hover::after {
@@ -803,6 +807,16 @@ a:hover {
     border-radius: 10px;
     background-color: #00549a;
     background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent)
+}
+
+.dummy {
+    position: relative;
+    z-index: -1;
+}
+
+.choosen-txt {
+    padding: 2em;
+    text-align: center;
 }
 
 .application-box .container {
